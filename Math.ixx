@@ -1,6 +1,6 @@
 #include <cmath>
 #include <ostream>
-//variant 22 Chudakov, individual zadanie 22-15=7
+//variant 21 Timkanov, individual zadanie 21-15=6
 export module Math;
 
 export namespace Math
@@ -52,7 +52,7 @@ export namespace Math
 		{
 			return Complex(-this->Re(),-this->Im());
 		}
-		Complex& operator++() // ïðåôèêñíûé èíêðåìåíò
+		Complex& operator++() // Ã¯Ã°Ã¥Ã´Ã¨ÃªÃ±Ã­Ã»Ã© Ã¨Ã­ÃªÃ°Ã¥Ã¬Ã¥Ã­Ã²
 		{
 			double re = this->Re()+1;
 			double im = this->Im();
@@ -60,7 +60,7 @@ export namespace Math
 			this->c_arg = atan2(im, re);
 			return *this;
 		}
-		const Complex operator++(int) // ïîñòôèêñíûé èíêðåìåíò
+		const Complex operator++(int) // Ã¯Ã®Ã±Ã²Ã´Ã¨ÃªÃ±Ã­Ã»Ã© Ã¨Ã­ÃªÃ°Ã¥Ã¬Ã¥Ã­Ã²
 		{
 			Complex it(*this);
 			double re = this->Re() + 1;
@@ -69,7 +69,7 @@ export namespace Math
 			this->c_arg = atan2(im, re);
 			return it;
 		}
-		Complex& operator--() // ïðåôèêñíûé äåêðåìåíò
+		Complex& operator--() // Ã¯Ã°Ã¥Ã´Ã¨ÃªÃ±Ã­Ã»Ã© Ã¤Ã¥ÃªÃ°Ã¥Ã¬Ã¥Ã­Ã²
 		{
 			double re = this->Re() - 1;
 			double im = this->Im();
@@ -77,7 +77,7 @@ export namespace Math
 			this->c_arg = atan2(im, re);
 			return *this;
 		}
-		const Complex operator--(int) // ïîñòôèêñíûé äåêðåìåíò
+		const Complex operator--(int) // Ã¯Ã®Ã±Ã²Ã´Ã¨ÃªÃ±Ã­Ã»Ã© Ã¤Ã¥ÃªÃ°Ã¥Ã¬Ã¥Ã­Ã²
 		{
 			Complex it(*this);
 			double re = this->Re() - 1;
